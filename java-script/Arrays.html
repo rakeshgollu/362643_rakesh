@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array concepts
+        var r = ["bmw", "volvo", "audi"]
+        document.write(r+"<br>")
+        var a = [];
+        a[0]= "bmw";
+        a[1]= "volvo";
+        a[2]= "audi";
+        document.write(a+"<br>")
+        var p = ["bmw", "volvo", "audi"]
+        document.write(p[2]+"<br>")
+        var b = ["bmw", "volvo", "audi"]
+        b[0] = "ferrari";
+        document.write(b+"<br>")
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(fruits.length+"<br>")
+        var p = ["bmw", "volvo", "audi"]
+        document.write(p.length-1+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        c = c instanceof Array
+        document.write(c +"<br>")
+        //ARRAY METHODS
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c.pop()
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c.push("grapes")
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c.shift()
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c.unshift("grapes")
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c[0]="grapes"
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c[c.length]="grapes"
+        document.write(c+"<br>")
+        var a = ["Cecilie", "Lone"];
+        var b = ["Emil", "Tobias", "Linus"];
+        var c = a.concat(b);
+        document.write(c+"<br>")
+        var a = [[1,2],[3,4],[5,6]];
+        var b = a.flat();
+        document.write(b+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c[c.splice (2,0,"lemon","kiwi")]
+        document.write(c+"<br>")
+        var c = ["Banana", "Orange", "Apple", "Mango"];
+        var b = c.slice(1)
+        document.write(b+"<br>")
+        //SORTING ARRAYS
+        var p = ["Banana", "Orange", "Apple", "Mango"];
+        var n = p.sort()
+        document.write(p+"<br>")
+        var p = ["Banana", "Orange", "Apple", "Mango"];
+        var n = p.reverse()
+        document.write(p)
+    </script>
+
+
+
+</body>
+</html>
