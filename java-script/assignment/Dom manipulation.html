@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+
+    </div>
+
+    <div id="tes">
+<p id="before">hello</p>
+    </div>
+
+    <div id="te">
+        <p id="befor">hello</p>
+            </div>
+
+            <div id="t">
+                <p id="befo">hello</p>
+                    </div>
+    <script>
+        var A = document.createElement("p")
+        A.innerText="hello world"
+        var B = document.getElementById("test")
+        B.appendChild(A)
+
+        var E = document.createElement("h1")
+        E.innerText="this is before the text"
+        var parent1 = document.getElementById("tes")
+        var child1 = document.getElementById("before")
+        parent1.insertBefore(E,child1) 
+
+        var O =document.getElementById("te")
+        O.remove()
+
+        var R = document.createElement("h1")
+        R.innerText="this is replace text"
+        var T = document.getElementById("befo")
+        T.replaceChildren(R)
+
+    </script>
+    
+</body>
+</html>
